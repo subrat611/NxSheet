@@ -10,8 +10,8 @@
   <body>
     <main>
       <!-- sheet-header -->
-      <div class="flex items-center bg-zinc-100 p-2">
-        <div class="flex items-start">
+      <div class="flex items-center bg-gray-50 p-2">
+        <div class="flex items-start pt-2">
           <svg
             width="40"
             height="40"
@@ -44,16 +44,16 @@
             <div class="mb-1 ms-2">
               <h1 class="text-xl">NxSheet A Google sheet clone</h1>
             </div>
-            <div class="flex items-center">
-              <button class="me-1 px-2 rounded hover:bg-slate-200">File</button>
-              <button class="me-1 px-2 rounded hover:bg-slate-200">Home</button>
-              <button class="me-1 px-2 rounded hover:bg-slate-200">
+            <div class="flex items-center my-1">
+              <button class="me-1 px-2 rounded hover:bg-gray-100">File</button>
+              <button class="me-1 px-2 rounded hover:bg-gray-100">Home</button>
+              <button class="me-1 px-2 rounded hover:bg-gray-100">
                 Insert
               </button>
-              <button class="me-1 px-2 rounded hover:bg-slate-200">
+              <button class="me-1 px-2 rounded hover:bg-gray-100">
                 Layout
               </button>
-              <button class="me-1 px-2 rounded hover:bg-slate-200">Help</button>
+              <button class="me-1 px-2 rounded hover:bg-gray-100">Help</button>
             </div>
           </div>
         </div>
@@ -61,9 +61,13 @@
       </div>
 
       <!-- sheet-cells-controller-container -->
-      <div class="bg-zinc-100 pb-2">
-        <div class="bg-slate-200 mx-12 rounded-full px-1 py-1">
-          <div class="px-2 flex items-center justify-between h-[30px] w-[30%]">
+      <div class="bg-gray-50 pb-3 border-b border-gray-200">
+        <div
+          class="bg-gray-100 border border-gray-300 mx-12 rounded-full px-1 py-1"
+        >
+          <div
+            class="px-2 flex items-center justify-start h-full w-full space-x-4 flex-wrap"
+          >
             <!-- copy icon -->
             <div>
               <svg
@@ -115,12 +119,15 @@
 
             <!-- font family and font size controller -->
             <div class="flex items-center justify-between">
-              <select class="bg-none outline-none p-1 bg-gray-300 rounded">
+              <select
+                id="fontFamily"
+                class="bg-gray-100 border p-2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full outline-none"
+              >
                 <option value="arial">Default (Arial)</option>
                 <option value="roboto">Roboto</option>
                 <option value="nunito">Nunito</option>
               </select>
-              <div class="flex items-center ms-2">
+              <div class="flex items-center">
                 <button>
                   <svg
                     width="21"
@@ -275,7 +282,7 @@
       <!-- sheet-grid-container-->
 
       <!-- sheet-footer-container -->
-      <div class="bg-gray-100 h-11 absolute bottom-0 left-0 w-full">
+      <div class="bg-gray-50 h-11 absolute bottom-0 left-0 w-full">
         <div class="ms-12 flex items-center h-full">
           <div class="cursor-pointer">
             <svg
